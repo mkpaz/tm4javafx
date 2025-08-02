@@ -11,6 +11,10 @@
 
     <artifactId>tm4javafx</artifactId>
 
+    <name>tm4javafx</name>
+    <description>TextMate (VSCode) syntax highlighting for JavaFX</description>
+    <url>https://github.com/mkpaz/tm4javafx</url>
+
     <dependencies>
         <dependency>
             <groupId>org.jspecify</groupId>

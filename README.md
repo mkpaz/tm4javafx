@@ -76,7 +76,7 @@ You can find the full version of this in [UsageExample.java](demo/src/main/java/
 To run the demo (shown in the screenshot) and play with grammars/themes, use:
 
 ```sh
-JAVA_HOME=/path/to/jdk/24
+mvn install
 cd demo
-mvn javafx:run
+JAVA_HOME=/path/to/jdk/24 mvn javafx:run
 ```
