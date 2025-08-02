@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC "-//Checkstyle//DTD Suppressions 1.0//EN"
+        "https://checkstyle.sourceforge.io/dtds/suppressions_1_0.dtd">
+
+<suppressions>
+    <suppress checks=".*" files=".*nanojson/.*" />
+</suppressions>
