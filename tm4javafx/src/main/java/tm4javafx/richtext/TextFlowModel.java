@@ -91,8 +91,9 @@ public class TextFlowModel extends RichTextModel {
         }
 
         var styledTextNodes = new ArrayList<Text>();
-        for (var line : content.split(LINE_SPLIT_PATTERN)) {
-            var tokens = provider.tokenize(line);
+        var lines = content.split(LINE_SPLIT_PATTERN);
+        for (int i = 0; i < lines.length; i++) {
+            var tokens = provider.tokenize(lines[i]);
 
             for (var token : tokens) {
                 var textNode = new Text(token.text());
@@ -100,7 +101,7 @@ public class TextFlowModel extends RichTextModel {
                 styledTextNodes.add(textNode);
             }
 
-            if (!styledTextNodes.isEmpty()) {
+            if (i < lines.length - 1 && !styledTextNodes.isEmpty()) {
                 var last = styledTextNodes.getLast();
                 last.setText(last.getText() + "\n");
             }
