@@ -34,7 +34,6 @@
         <url>${project.url}</url>
     </scm>
 
-
     <modules>
         <module>tm4javafx</module>
         <module>demo</module>
@@ -44,12 +43,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <maven.compiler.source>24</maven.compiler.source>
-        <maven.compiler.target>24</maven.compiler.target>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
 
-        <java.version>24</java.version>
-        <javafx.version>25-ea+24</javafx.version>
-        <lib.junit.version>5.13.4</lib.junit.version>
+        <java.version>25</java.version>
+        <javafx.version>27</javafx.version>
+        <lib.junit.version>5.14.4</lib.junit.version>
     </properties>
 
     <dependencyManagement>
@@ -57,7 +56,7 @@
             <dependency>
                 <groupId>io.github.mkpaz</groupId>
                 <artifactId>tm4java</artifactId>
-                <version>1.0.0</version>
+                <version>1.1.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mkpaz</groupId>
@@ -68,7 +67,7 @@
             <dependency>
                 <groupId>org.jspecify</groupId>
                 <artifactId>jspecify</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1</version>
             </dependency>
             <dependency>
                 <groupId>org.openjfx</groupId>
@@ -107,7 +106,7 @@
             <dependency>
                 <groupId>org.assertj</groupId>
                 <artifactId>assertj-core</artifactId>
-                <version>3.27.3</version>
+                <version>3.27.7</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
@@ -119,7 +118,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.14.0</version>
+                    <version>3.16.0</version>
                     <configuration>
                         <release>${java.version}</release>
                         <compilerArgs>
@@ -204,7 +203,7 @@
                     <plugin>
                         <groupId>org.sonatype.central</groupId>
                         <artifactId>central-publishing-maven-plugin</artifactId>
-                        <version>0.8.0</version>
+                        <version>0.11.0</version>
                         <extensions>true</extensions>
                         <configuration>
                             <publishingServerId>central</publishingServerId>
